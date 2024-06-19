@@ -1,0 +1,71 @@
+; 變數 i，初始值為 1
+i = 1
+
+; 執行迴圈，以變數 i 來控制
+do while i<=1000
+	; 等待畫面出現 login 字串
+	sendln ''
+	
+	; 等待畫面出現 login 字串
+	wait 'ctx0800-c0 login:'
+	
+	
+	; 輸入帳號 - "id"
+	sendln 'tcuadmin'
+	
+	; 等待 1 秒
+	pause 1
+	
+	; 輸入密碼 - "password"
+	sendln 'Askey+1937'
+	
+	; 等待 2 秒
+	pause 1
+		
+	; 進入 - "root"
+	sendln 'sudo su'
+	
+	; 等待 2 秒
+	pause 2
+		
+	; 輸入密碼 - "password"
+	sendln 'Askey+1937'
+	
+	;sendln 'adb shell sed -i "s/01386A39/01386A30/g" /firmware/image/Ver_Info.txt'
+
+loop
+
+
+
+
+
+
+
+
+
+
+
+sleep 10
+
+
+sleep 10
+
+sleep 10
+
+
+
+sleep 1 
+
+
+
+
+
+
+
+sleep 10
+
+sleep 10
+sleep 10
+
+
+
